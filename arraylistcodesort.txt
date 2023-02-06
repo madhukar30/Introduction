@@ -1,0 +1,47 @@
+import java.util.*;
+
+public class Main{
+  
+  public static void arrayListSort(ArrayList array) {
+    for(int i=0;i<array.size();i++){
+      for(int j=0;j<array.size();j++){
+        if(((int)array.get(i)<(int)array.get(j)) && i!=j){
+          int temp=(int)array.get(i);
+          array.set(i,array.get(j));
+          array.set(j,temp);
+        }
+      }
+    }
+    System.out.println(array);
+  }
+  
+  public static void main(String[] args){
+    ArrayList<Integer> ar=new ArrayList<Integer>();
+    ar.add(4);
+    ar.add(0);
+    ar.add(1);
+    ar.add(9);
+    ar.add(6);
+    ar.add(3);
+    System.out.println(ar);
+    
+    arrayListSort(ar);  
+    
+    if (ar.size()==0){
+      System.out.println("Empty list");
+    }
+    else{
+      System.out.println("Not empty");
+    }
+    
+    ar.remove(0);
+    System.out.println(ar);
+    System.out.println(ar.size());
+    
+    System.out.println("Enter new element");
+    Scanner s=new Scanner(System.in);
+    int new_element=s.nextInt();
+    ar.set(1,new_element);
+    System.out.println(ar);
+  }
+}
