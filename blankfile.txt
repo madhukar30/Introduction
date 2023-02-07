@@ -1,1 +1,2 @@
 this is a file in blank-project
+this is the seconf line in the file in blank-project
