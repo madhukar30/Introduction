@@ -1,2 +1,3 @@
 *.docx
 *.java
+/ignore_folder/*
