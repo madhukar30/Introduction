@@ -1,0 +1,3 @@
+this is  file is used to know the cached command 
+hii
+
